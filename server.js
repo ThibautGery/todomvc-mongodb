@@ -122,6 +122,7 @@
 		res.sendfile('index.html'); // load the single view file (angular will handle the page changes on the front-end)
 	});
 
+	const port = 8080 || process.env.PORT
 	// listen (start app with node server.js) ======================================
-	app.listen(process.env.PORT);
-	console.log("App listening on port " + process.env.PORT);
+	app.listen(port);
+	console.log("App listening on port " + port);
